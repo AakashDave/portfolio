@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Balthazar&family=Sedgwick+Ave&family=Titillium+Web:wght@900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    }
+::-webkit-scrollbar {
+    width: 15px;
+}
+      
+      /* Track */
+::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+}
+       
+      /* Handle */
+::-webkit-scrollbar-thumb {
+    background: lightseagreen; 
+}
+      
+      /* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: rgb(33, 55, 104); 
+}    
+#vanta{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    align-items: flex-start;
+    flex-direction: column;
+    background: url('../img/giphy1.gif');
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+}
+#vanta h1{
+    color: white;
+    text-shadow: 1px 1px 1px black;
+    width: 12ch;
+    animation: typing 2.5s steps(22) infinite, blink .5s step-end infinite alternate;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 3px solid;
+    font-family: monospace;
+    font-weight: 600;
+    font-size: 50px;
+}
+  @keyframes typing {
+    from {
+      width: 0
+    }
+  }
+  @keyframes blink {
+    50% {
+      border-color: transparent
+    }
+  }
+
+  #vanta h5{
+    font-family: monospace;
+    font-weight: 800;
+  }
+.startbtn{
+    color: rgb(33, 55, 104);
+    font-family: monospace;
+    font-weight: bold;
+    padding: 8px 16px;
+    background-color: white;
+    outline: none;
+    border: 2px solid rgb(33, 55, 104);
+    border-radius: 15px;
+    box-shadow: -7px 10px 2px black;
+    transition: all 0.3s;
+}
+.startbtn:hover{
+    color: white;
+    background-color: rgb(33, 55, 104);
+    border: 2px solid black;
+    box-shadow: 0px 0px 1px black;
+}
+
+/* home */
+#home{
+    width: 100%;
+    color: white;
+}
+#head-detail{
+    animation: change 8s infinite;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    width: 100%;
+    height: 100vh;
+}
+#head-detail p{
+    font-weight:600;
+    
+}
+@keyframes change {
+    0% {
+        background-color: black;
+        color: white;
+    }
+    45%{
+        background-color: black;
+        color: white;
+    }
+    48%{
+        background-color: white;
+        color: black;
+    }
+    100% {
+        background-color: white;
+        color: black;
+    }
+  }
+  .name{
+      color: rgb(33, 55, 104);
+      font-family: 'Sedgwick Ave', cursive;
+  }
+.details1{
+    width: 60%;
+    display:flex;
+    flex-direction: column;
+    padding-left: 50px;
+}
+.manpic{
+    width: 40%;
+}
+.manpic img{
+    width: 100%;
+}
+.wrkbtn{
+    color: rgb(33, 55, 104);
+    font-family: monospace;
+    width: 30%;
+    font-weight: bold;
+    padding: 8px 16px;
+    background-color: white;
+    outline: none;
+    border: 2px solid rgb(33, 55, 104);
+    border-radius: 15px;
+    box-shadow: -7px 10px 2px black;
+    transition: all 0.3s;
+}
+.wrkbtn:hover{
+    color: white;
+    background-color: rgb(33, 55, 104);
+    border: 2px solid black;
+    box-shadow: 0px 0px 1px black;
+}
